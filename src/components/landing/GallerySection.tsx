@@ -1,9 +1,9 @@
 import AnimatedSection from "./AnimatedSection";
 
 const images = [
-  { src: "/lp-lygia-clark/images/gallery1.jpg", alt: "Sala com paredes de vidro e pé direito duplo" },
-  { src: "/lp-lygia-clark/images/gallery2.jpg", alt: "Área de convivência e cozinha do coworking" },
-  { src: "/lp-lygia-clark/images/gallery3.jpg", alt: "Sala de reunião equipada" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.01.png", alt: "Loja Lygia Clark - Vista frontal" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.02.png", alt: "Loja Lygia Clark - Interior" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.03.png", alt: "Loja Lygia Clark - Detalhes do espaço" },
 ];
 
 const Gallery = () => {

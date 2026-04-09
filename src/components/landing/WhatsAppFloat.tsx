@@ -7,7 +7,7 @@ declare global {
   }
 }
 
-const WHATSAPP_LINK = "https://wa.me/553121158984/?text=Olá!+Gostaria+de+mais+informações+sobre+a+sala+Lygia+Clark.";
+const WHATSAPP_LINK = "https://wa.me/553121158984/?text=Ol%C3%A1!+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+loja+Lygia+Clark.";
 
 const WhatsAppFloat = () => {
   return (

@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import AnimatedSection from "./AnimatedSection";
 
-const WHATSAPP_URL = "https://wa.me/553121158984/?text=Olá!+Gostaria+de+agendar+uma+visita+para+sala+Lygia+Clark.+A+sala+ainda+está+disponível?+:-D.";
+const WHATSAPP_URL = "https://wa.me/553121158984/?text=Ol%C3%A1!+Gostaria+de+agendar+uma+visita+para+loja+Lygia+Clark.+A+loja+ainda+est%C3%A1+dispon%C3%ADvel%3F+%3A-D.";
 
 const Hero = () => {
   const imgRef = useRef<HTMLDivElement>(null);
@@ -22,7 +22,7 @@ const Hero = () => {
       <div ref={imgRef} className="absolute inset-0 will-change-transform">
         <img
           src="/lp-lygia-clark/images/sala-lygia-clark.04.png"
-          alt="Sala Lygia Clark - Interior com pé direito duplo e vista panorâmica"
+          alt="Loja Lygia Clark - Interior com pé direito duplo e vista panorâmica"
           width={1920}
           height={1080}
           className="w-full h-full object-cover scale-110"
@@ -36,7 +36,7 @@ const Hero = () => {
             Café Coabita Coworking
           </p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-10 leading-tight">
-            Sala Lygia Clark
+            Loja Lygia Clark
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/80 mb-6 font-light">
             60m² · Pé Direito Duplo · Vista Arena MRV

@@ -2,7 +2,7 @@ import { DoorOpen, Lock, Zap, Check } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
 const diferenciais = [
-  { icon: DoorOpen, label: "Sala privativa", desc: "Fechamento interno em vidro" },
+  { icon: DoorOpen, label: "Loja privativa", desc: "Fechamento interno em vidro" },
   { icon: Lock, label: "Fechadura digital", desc: "Acesso seguro e controlado" },
   { icon: Zap, label: "Ar-condicionado", desc: "Infraestrutura já instalada" },
   { icon: Zap, label: "Tomadas 127v/220v", desc: "Distribuídas pela sala" },
@@ -18,10 +18,10 @@ const StructureSection = () => (
           Estrutura Completa
         </p>
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center text-foreground">
-          Diferenciais da Sala
+          Diferenciais da Loja
         </h2>
         <p className="text-muted-foreground text-center mb-16 max-w-xl mx-auto">
-          Saiba o que está incluso no nosso plano anual
+          Saiba o que está incluso nos nossos planos
         </p>
       </AnimatedSection>
 

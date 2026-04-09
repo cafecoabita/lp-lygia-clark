@@ -3,14 +3,14 @@ import AnimatedSection from "./AnimatedSection";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
 const images = [
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.01.png" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.02.png" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.03.png" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.04.png" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.05.png" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.06.png" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.07.png" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.08.png" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.01.webp" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.02.webp" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.03.webp" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.04.webp" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.05.webp" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.06.webp" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.07.webp" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.08.webp" },
 ];
 
 const DescriptionGallerySection = () => {

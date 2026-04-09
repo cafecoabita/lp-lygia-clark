@@ -1,9 +1,9 @@
 import AnimatedSection from "./AnimatedSection";
 
 const images = [
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.01.png", alt: "Loja Lygia Clark - Vista frontal" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.02.png", alt: "Loja Lygia Clark - Interior" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.03.png", alt: "Loja Lygia Clark - Detalhes do espaço" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.01.webp", alt: "Loja Lygia Clark - Vista frontal" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.02.webp", alt: "Loja Lygia Clark - Interior" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.03.webp", alt: "Loja Lygia Clark - Detalhes do espaço" },
 ];
 
 const Gallery = () => {

@@ -21,7 +21,7 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div ref={imgRef} className="absolute inset-0 will-change-transform">
         <img
-          src="/lp-lygia-clark/images/sala-lygia-clark.04.png"
+          src="/lp-lygia-clark/images/sala-lygia-clark.04.webp"
           alt="Loja Lygia Clark - Interior com pé direito duplo e vista panorâmica"
           width={1920}
           height={1080}

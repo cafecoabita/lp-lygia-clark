@@ -3,14 +3,14 @@ import AnimatedSection from "./AnimatedSection";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
 const images = [
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.01.webp" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.02.webp" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.03.webp" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.04.webp" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.05.webp" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.06.webp" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.07.webp" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.08.webp" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.01.webp", alt: "Loja Lygia Clark — vista frontal com fachada em vidro" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.02.webp", alt: "Loja Lygia Clark — pé direito duplo e iluminação natural" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.03.webp", alt: "Loja Lygia Clark — ambiente interno versátil para escritório ou showroom" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.04.webp", alt: "Loja Lygia Clark — vista panorâmica para a Arena MRV" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.05.webp", alt: "Loja Lygia Clark — espaço de 60m² configurado como escritório" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.06.webp", alt: "Loja Lygia Clark — detalhes da infraestrutura do coworking" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.07.webp", alt: "Loja Lygia Clark — corredor de acesso e área comum Café Coabita" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.08.webp", alt: "Loja Lygia Clark — fachada externa no Café Coabita Coworking, Eldorado Contagem" },
 ];
 
 const DescriptionGallerySection = () => {
@@ -64,7 +64,7 @@ const DescriptionGallerySection = () => {
           {/* 1. IMAGEM GRANDE (Topo Esquerda) */}
           <AnimatedSection delay={0.1} className="md:col-span-2 md:row-span-2">
             <div className="w-full h-full overflow-hidden rounded-2xl cursor-pointer" onClick={() => setSelectedIndex(0)}>
-              <img src={images[0].src} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Galeria" />
+              <img src={images[0].src} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt={images[0].alt} loading="lazy" />
             </div>
           </AnimatedSection>
 
@@ -72,7 +72,7 @@ const DescriptionGallerySection = () => {
           {images.slice(1, 5).map((img, i) => (
             <AnimatedSection key={i} delay={0.2 + i * 0.05} className="md:col-span-1">
               <div className="w-full h-full overflow-hidden rounded-2xl cursor-pointer" onClick={() => setSelectedIndex(i + 1)}>
-                <img src={img.src} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Galeria" />
+                <img src={img.src} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt={img.alt} loading="lazy" />
               </div>
             </AnimatedSection>
           ))}
@@ -81,7 +81,7 @@ const DescriptionGallerySection = () => {
           {images.slice(5, 7).map((img, i) => (
             <AnimatedSection key={i + 5} delay={0.4 + i * 0.05} className="md:col-span-1">
               <div className="w-full h-full overflow-hidden rounded-2xl cursor-pointer" onClick={() => setSelectedIndex(i + 5)}>
-                <img src={img.src} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Galeria" />
+                <img src={img.src} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt={img.alt} loading="lazy" />
               </div>
             </AnimatedSection>
           ))}
@@ -89,7 +89,7 @@ const DescriptionGallerySection = () => {
           {/* 8. IMAGEM COMPRIDA */}
           <AnimatedSection delay={0.5} className="md:col-span-2">
             <div className="w-full h-full overflow-hidden rounded-2xl cursor-pointer" onClick={() => setSelectedIndex(7)}>
-              <img src={images[7].src} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Galeria" />
+              <img src={images[7].src} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt={images[7].alt} loading="lazy" />
             </div>
           </AnimatedSection>
 
@@ -106,7 +106,7 @@ const DescriptionGallerySection = () => {
           <img
             src={images[selectedIndex].src}
             className="max-w-full max-h-full rounded-xl shadow-2xl animate-in zoom-in-95 duration-300"
-            alt="Ampliada"
+            alt={images[selectedIndex].alt}
             onClick={e => e.stopPropagation()}
           />
 

@@ -58,7 +58,7 @@ const PromoSection = () => (
               rel="noopener noreferrer"
               onClick={() => {
                 if (typeof window.gtagSendEvent === 'function') {
-                  window.gtagSendEvent(WHATSAPP_ANUAL);
+                  window.gtagSendEvent(WHATSAPP_ANUAL, 'contato_plano_anual');
                 }
               }}
               className="mt-8 inline-block bg-black border border-black text-white font-semibold px-6 py-3 rounded-xl text-base tracking-wide hover:bg-white hover:text-black transition-colors"
@@ -100,7 +100,7 @@ const PromoSection = () => (
               rel="noopener noreferrer"
               onClick={() => {
                 if (typeof window.gtagSendEvent === 'function') {
-                  window.gtagSendEvent(WHATSAPP_BIENAL);
+                  window.gtagSendEvent(WHATSAPP_BIENAL, 'contato_plano_bienal');
                 }
               }}
               className="mt-8 inline-block bg-black border border-black text-white font-semibold px-6 py-3 rounded-xl text-base tracking-wide hover:bg-white hover:text-black transition-colors"

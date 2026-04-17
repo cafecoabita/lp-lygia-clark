@@ -3,41 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Loja Lygia Clark | Café Coabita Coworking - 60m² Vista Arena MRV</title>
-    <meta name="description" content="Alugue a Loja Lygia Clark no Café Coabita Coworking. 60m², pé direito duplo, vista Arena MRV, Eldorado - Contagem/MG. Agende sua visita!" />
-    <meta property="og:title" content="Loja Lygia Clark | Café Coabita Coworking" />
-    <meta property="og:description" content="Loja comercial 60m² com pé direito duplo e vista Arena MRV no Eldorado, Contagem/MG." />
+    <title>Loja Lygia Clark | Café Coabita Coworking - Sala Comercial 60m² Contagem MG</title>
+    <meta name="description" content="Alugue a Loja Lygia Clark no Café Coabita Coworking. Sala comercial 60m², pé direito duplo, vista Arena MRV. Planos anuais e bienais. Eldorado, Contagem/MG. Agende sua visita!" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://cafecoabita.github.io/lp-lygia-clark/" />
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <link rel="icon" href="/lp-lygia-clark/favicon.png" type="image/png" />
+    <meta property="og:site_name" content="Café Coabita Coworking" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:url" content="https://cafecoabita.github.io/lp-lygia-clark/" />
+    <meta property="og:title" content="Loja Lygia Clark | Sala Comercial 60m² — Café Coabita Coworking" />
+    <meta property="og:description" content="Sala comercial 60m² com pé direito duplo, fachada em vidro e vista Arena MRV no Eldorado, Contagem/MG. Infraestrutura completa de coworking incluída." />
+    <meta property="og:image" content="https://cafecoabita.github.io/lp-lygia-clark/images/sala-lygia-clark.04.webp" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1080" />
+    <meta property="og:image:alt" content="Loja Lygia Clark - Interior com pé direito duplo e vista Arena MRV" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Loja Lygia Clark | Sala Comercial 60m² — Café Coabita" />
+    <meta name="twitter:description" content="Sala comercial 60m² com pé direito duplo e vista Arena MRV. Eldorado, Contagem/MG." />
+    <meta name="twitter:image" content="https://cafecoabita.github.io/lp-lygia-clark/images/sala-lygia-clark.04.webp" />
+
+    <link rel="icon" href="/lp-lygia-clark/favicon/favicon.ico" type="image/x-icon" />
+
+    <!-- Preload imagem principal (LCP) -->
+    <link rel="preload" as="image" href="/lp-lygia-clark/images/sala-lygia-clark.04.webp" type="image/webp" fetchpriority="high" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
+    <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-468915585"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-468915585');
+      gtag('set', { 'lp_name': 'lygia_clark', 'lp_produto': 'sala_comercial' });
+      gtag('config', 'G-468915585', { 'send_page_view': true });
+      gtag('config', 'AW-6261307082');
     </script>
 
-    <!-- Google tag (gtag.js) event - delayed navigation helper -->
+    <!-- Helper para eventos de conversão -->
     <script>
-      // Helper function to delay opening a URL until a gtag event is sent.
-      // Call it in response to an action that should navigate to a URL.
-      function gtagSendEvent(url) {
+      function gtagSendEvent(url, eventName) {
         var callback = function () {
           if (typeof url === 'string') {
-            window.location = url;
+            window.open(url, '_blank', 'noopener,noreferrer');
           }
         };
-        gtag('event', 'contato_sala_lygia_clark', {
+        gtag('event', eventName || 'contato_sala_lygia_clark', {
           'event_callback': callback,
           'event_timeout': 2000,
-          // <event_parameters>
         });
         return false;
       }
+    </script>
+
+    <!-- Schema.org JSON-LD: LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Café Coabita Coworking — Loja Lygia Clark",
+      "description": "Sala comercial individual de 60m² com pé direito duplo, fachada em vidro, vista Arena MRV e infraestrutura completa de coworking. Ideal para escritórios, estúdios, showrooms e lojas.",
+      "url": "https://cafecoabita.github.io/lp-lygia-clark/",
+      "telephone": "+553121158984",
+      "image": "https://cafecoabita.github.io/lp-lygia-clark/images/sala-lygia-clark.04.webp",
+      "priceRange": "R$ 2.000 – R$ 3.500/mês",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. José Faria da Rocha, 5614 — 2º Pavimento",
+        "addressLocality": "Contagem",
+        "addressRegion": "MG",
+        "postalCode": "32310-210",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -19.9408418,
+        "longitude": -44.033499
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "07:00",
+          "closes": "19:00"
+        }
+      ],
+      "hasMap": "https://maps.google.com/?q=Café+Coabita+Contagem+MG",
+      "sameAs": []
+    }
     </script>
   </head>
   

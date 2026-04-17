@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 declare global {
   interface Window {
-    gtagSendEvent?: (url: string) => void;
+    gtagSendEvent?: (url: string, eventName?: string) => void;
   }
 }
 

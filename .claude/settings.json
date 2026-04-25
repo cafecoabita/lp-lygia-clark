@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"c:\\Users\\Vinicius\\OneDrive\\Desktop\\Dados novos\\Projetos VS Code\\cafe-coabita\\lp-lygia-clark\" && git add -A && git diff --cached --quiet || git commit -m \"chore: atualização automática\" && git push origin main",
+            "shell": "powershell",
+            "statusMessage": "Salvando no GitHub..."
+          }
+        ]
+      }
+    ]
+  }
+}

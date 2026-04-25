@@ -16,26 +16,24 @@ const ReviewsSection = () => {
   }, []);
 
   return (
-    <AnimatedSection className="py-20 md:py-28 px-6 bg-secondary">
-      <p className="tracking-[0.25em] uppercase text-sm text-muted-foreground mb-4 font-medium text-center">
-        Avaliações Reais
-      </p>
-      <div id="reviews" className="max-w-5xl mx-auto text-center">
-        <h2 className="text-2xl md:text-4xl font-bold mb-4 text-foreground">
-         O que nossos clientes dizem
-        </h2>
-
-        <p className="text-sm md:text-base text-muted-foreground mb-10 max-w-2xl mx-auto">
-
+    <section className="py-20 md:py-28 px-6 bg-secondary">
+      <AnimatedSection>
+        <p className="tracking-[0.25em] uppercase text-sm text-muted-foreground mb-4 font-medium text-center">
+          Avaliações Reais
         </p>
+        <div id="reviews" className="max-w-5xl mx-auto text-center">
+          <h2 className="text-2xl md:text-4xl font-bold mb-4 text-foreground">
+            O que nossos clientes dizem
+          </h2>
+        </div>
+      </AnimatedSection>
 
+      <div className="max-w-5xl mx-auto mt-10">
         <div className="rounded-2xl border border-border bg-background p-4 md:p-6 shadow-sm">
-          <div
-            className="elfsight-app-a67205c0-7fa3-4332-930f-657a872becfe"
-          ></div>
+          <div className="elfsight-app-a67205c0-7fa3-4332-930f-657a872becfe"></div>
         </div>
       </div>
-    </AnimatedSection>
+    </section>
   );
 };
 

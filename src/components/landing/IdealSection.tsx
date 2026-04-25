@@ -8,7 +8,7 @@ const useCases = [
   { icon: Video, label: "Produção de Conteúdo" },
   { icon: UserCheck, label: "Atendimento Profissional" },
   { icon: Store, label: "Showroom Técnico" },
-  { icon: ShoppingBag, label: "Loja Técnica Corporativa" },
+  { icon: ShoppingBag, label: "Espaço Técnico Corporativo" },
 ];
 
 const Ideal = () => {

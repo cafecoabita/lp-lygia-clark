@@ -32,7 +32,6 @@ const ReviewsSection = () => {
         <div className="rounded-2xl border border-border bg-background p-4 md:p-6 shadow-sm">
           <div
             className="elfsight-app-a67205c0-7fa3-4332-930f-657a872becfe"
-            data-elfsight-app-lazy
           ></div>
         </div>
       </div>

@@ -3,14 +3,14 @@ import AnimatedSection from "./AnimatedSection";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
 const images = [
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.01.webp", alt: "Loja Lygia Clark — vista frontal com fachada em vidro" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.02.webp", alt: "Loja Lygia Clark — pé direito duplo e iluminação natural" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.03.webp", alt: "Loja Lygia Clark — ambiente interno versátil para escritório ou showroom" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.04.webp", alt: "Loja Lygia Clark — vista panorâmica para a Arena MRV" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.05.webp", alt: "Loja Lygia Clark — espaço de 60m² configurado como escritório" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.06.webp", alt: "Loja Lygia Clark — detalhes da infraestrutura do coworking" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.07.webp", alt: "Loja Lygia Clark — corredor de acesso e área comum Café Coabita" },
-  { src: "/lp-lygia-clark/images/sala-lygia-clark.08.webp", alt: "Loja Lygia Clark — fachada externa no Café Coabita Coworking, Eldorado Contagem" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.01.webp", alt: "Espaço Lygia Clark — vista frontal com fachada em vidro" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.02.webp", alt: "Espaço Lygia Clark — pé direito duplo e iluminação natural" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.03.webp", alt: "Espaço Lygia Clark — ambiente interno versátil para escritório ou showroom" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.04.webp", alt: "Espaço Lygia Clark — vista panorâmica para a Arena MRV" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.05.webp", alt: "Espaço Lygia Clark — espaço de 60m² configurado como escritório" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.06.webp", alt: "Espaço Lygia Clark — detalhes da infraestrutura do coworking" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.07.webp", alt: "Espaço Lygia Clark — corredor de acesso e área comum Café Coabita" },
+  { src: "/lp-lygia-clark/images/sala-lygia-clark.08.webp", alt: "Espaço Lygia Clark — fachada externa no Café Coabita Coworking, Eldorado Contagem" },
 ];
 
 const DescriptionGallerySection = () => {
@@ -49,11 +49,11 @@ const DescriptionGallerySection = () => {
               Espaço Corporativo Dentro de Coworking Estruturado
             </h2>
             <div className="text-lg text-muted-foreground leading-relaxed text-justify max-w-full">
-              Apresentamos a <strong className="text-foreground">Loja Lygia Clark</strong>, no Café Coabita Coworking,
+              Apresentamos a <strong className="text-foreground">Espaço Lygia Clark</strong>, no Café Coabita Coworking,
               uma sala <strong className="text-foreground">individual e versátil de 60 m²</strong>, com vista livre para a
               <strong className="text-foreground"> Arena MRV</strong>. Ambiente com fachada em vidro sem obstruções,
               excelente <strong className="text-foreground">iluminação natural e pé direito duplo</strong>, permitindo
-              diferentes configurações de layout — seja para um escritório moderno, estúdio criativo, showroom ou loja técnica.
+              diferentes configurações de layout — seja para um escritório moderno, estúdio criativo, showroom ou espaço técnico.
             </div>
           </AnimatedSection>
         </div>

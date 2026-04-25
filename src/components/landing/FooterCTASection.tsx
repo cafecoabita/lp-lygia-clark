@@ -1,6 +1,6 @@
 import AnimatedSection from "./AnimatedSection";
 
-const WHATSAPP_URL = "https://wa.me/553121158984/?text=Ol%C3%A1!+Gostaria+de+agendar+uma+visita+para+loja+Lygia+Clark.+A+loja+ainda+est%C3%A1+dispon%C3%ADvel%3F+%3A-D.";
+const WHATSAPP_URL = "https://wa.me/553121158984/?text=Ol%C3%A1!+Gostaria+de+agendar+uma+visita+para+o+Espa%C3%A7o+Lygia+Clark.+O+Espa%C3%A7o+ainda+est%C3%A1+dispon%C3%ADvel%3F+%3A-D.";
 
 const FooterCTA = () => {
   return (
@@ -11,7 +11,7 @@ const FooterCTA = () => {
             Pronto para Conhecer?
           </h2>
           <p className="text-lg text-surface-dark-foreground/60 mb-10">
-            Agende uma visita e descubra como a Loja Lygia Clark pode transformar o seu negócio.
+            Agende uma visita e descubra como o Espaço Lygia Clark pode transformar o seu negócio.
           </p>
           <a
             href={WHATSAPP_URL}

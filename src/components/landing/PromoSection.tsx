@@ -1,16 +1,29 @@
 import AnimatedSection from "./AnimatedSection";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Star, Car } from "lucide-react";
 
+declare global {
+  interface Window {
+    gtagSendEvent?: (url: string, eventName?: string) => void;
+  }
+}
+
 const WHATSAPP_ANUAL =
-  "https://wa.me/553121158984/?text=Ol%C3%A1%2C+vi+o+seu+an%C3%BAncio+no+Google+e+gostaria+de+saber+mais+sobre+o+plano+anual+da+loja+Lygia+Clark";
+  "https://wa.me/553121158984/?text=Ol%C3%A1%2C+vi+o+seu+an%C3%BAncio+no+Google+e+gostaria+de+saber+mais+sobre+o+plano+de+1+ano+do+Espa%C3%A7o+Lygia+Clark";
 
 const WHATSAPP_BIENAL =
-  "https://wa.me/553121158984/?text=Ol%C3%A1%2C+vi+seu+an%C3%BAncio+no+Google+e+gostaria+de+saber+mais+sobre+o+plano+bienal+da+loja+Lygia+Clark";
+  "https://wa.me/553121158984/?text=Ol%C3%A1%2C+vi+seu+an%C3%BAncio+no+Google+e+gostaria+de+saber+mais+sobre+o+plano+de+2+anos+do+Espa%C3%A7o+Lygia+Clark";
+
+const StarBadge = ({ label }: { label: string }) => (
+  <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+    <div className="flex items-center gap-1 text-xs font-bold px-3 py-1 bg-background text-foreground border border-black rounded-full whitespace-nowrap">
+      <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" /> {label} <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" />
+    </div>
+  </div>
+);
 
 const PromoSection = () => (
-  <AnimatedSection className="py-20 md:py-28 px-6 bg-background">
+  <AnimatedSection id="planos" className="py-20 md:py-28 px-6 bg-background">
     <div className="max-w-4xl mx-auto text-center">
       <p className="tracking-[0.25em] uppercase text-sm text-muted-foreground mb-10 font-medium">
         Melhor Custo-Benefício
@@ -26,13 +39,9 @@ const PromoSection = () => (
       {/* CARDS */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
 
-        {/* PLANO ANUAL */}
+        {/* 1 ANO */}
         <Card className="relative border border-black bg-background shadow-sm rounded-xl">
-          <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-            <Badge variant="secondary" className="flex items-center gap-1 text-xs font-bold px-3 whitespace-nowrap">
-              <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" /> PLANO ANUAL <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" />
-            </Badge>
-          </div>
+          <StarBadge label="1 ANO" />
 
           <CardContent className="pt-10 pb-10 px-8 text-center flex flex-col justify-between h-full">
             <div>
@@ -56,25 +65,24 @@ const PromoSection = () => (
               href={WHATSAPP_ANUAL}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => {
-                if (typeof window.gtagSendEvent === 'function') {
-                  window.gtagSendEvent(WHATSAPP_ANUAL, 'contato_plano_anual');
+              onClick={(e) => {
+                e.preventDefault();
+                if (typeof window.gtagSendEvent === "function") {
+                  window.gtagSendEvent(WHATSAPP_ANUAL, "contato_plano_1_ano");
+                } else {
+                  window.open(WHATSAPP_ANUAL, "_blank");
                 }
               }}
               className="mt-8 inline-block bg-black border border-black text-white font-semibold px-6 py-3 rounded-xl text-base tracking-wide hover:bg-white hover:text-black transition-colors"
             >
-              Quero o Plano Anual
+              Quero o plano por um ano
             </a>
           </CardContent>
         </Card>
 
-        {/* PLANO BIENAL */}
+        {/* 2 ANOS */}
         <Card className="relative border border-black bg-background shadow-sm rounded-xl">
-          <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-            <Badge variant="secondary" className="flex items-center gap-1 text-xs font-bold px-3 whitespace-nowrap">
-              <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" /> PLANO BIENAL <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" />
-            </Badge>
-          </div>
+          <StarBadge label="2 ANOS" />
 
           <CardContent className="pt-10 pb-10 px-8 text-center flex flex-col justify-between h-full">
             <div>
@@ -98,14 +106,17 @@ const PromoSection = () => (
               href={WHATSAPP_BIENAL}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => {
-                if (typeof window.gtagSendEvent === 'function') {
-                  window.gtagSendEvent(WHATSAPP_BIENAL, 'contato_plano_bienal');
+              onClick={(e) => {
+                e.preventDefault();
+                if (typeof window.gtagSendEvent === "function") {
+                  window.gtagSendEvent(WHATSAPP_BIENAL, "contato_plano_2_anos");
+                } else {
+                  window.open(WHATSAPP_BIENAL, "_blank");
                 }
               }}
               className="mt-8 inline-block bg-black border border-black text-white font-semibold px-6 py-3 rounded-xl text-base tracking-wide hover:bg-white hover:text-black transition-colors"
             >
-              Quero o Plano Bienal
+              Quero o plano por dois anos
             </a>
           </CardContent>
         </Card>
